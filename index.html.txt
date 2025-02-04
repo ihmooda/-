@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حاسبة النسبة النهائية</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-calculator"></i> حاسبة النسبة النهائية</h1>
+        <p>أدخل درجاتك لكل مادة من 100:</p>
+        
+        <div class="input-group">
+            <label>الرياضيات:</label>
+            <input type="number" id="math" min="0" max="100">
+        </div>
+
+        <div class="input-group">
+            <label>الإحصاء:</label>
+            <input type="number" id="statistics" min="0" max="100">
+        </div>
+
+        <div class="input-group">
+            <label>الطبيعة:</label>
+            <input type="number" id="science" min="0" max="100">
+        </div>
+
+        <div class="input-group">
+            <label>اللغة العربية:</label>
+            <input type="number" id="arabic" min="0" max="100">
+        </div>
+
+        <div class="input-group">
+            <label>اللغة الإنجليزية:</label>
+            <input type="number" id="english" min="0" max="100">
+        </div>
+
+        <button onclick="calculateScore()"><i class="fas fa-check"></i> احسب النسبة</button>
+        <button class="reset" onclick="resetFields()"><i class="fas fa-redo"></i> إعادة الضبط</button>
+
+        <h2 id="result">نسبتك النهائية: --%</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
